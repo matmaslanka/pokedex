@@ -1,0 +1,37 @@
+#details {
+    padding: 1rem;
+    border-radius: 8px;
+    max-height: 60vh;
+    overflow: auto;
+    background-color: #d60808;
+  }
+  
+  header {
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    width: 100%;
+    text-wrap: balance;
+    text-align: center;
+  }
+
+  img {
+    background-color: wheat;
+    border-radius: 50%;
+    width: 80%;
+  }
+  
+  .container {
+    display: flex;
+  }
+
+  .box {
+    width: 50%;
+    padding-left: 20px;
+
+  }

@@ -1,0 +1,21 @@
+<app-header/>
+
+<main>
+  <ul id="pokemons">
+    @for (pokemon of pokemons; track pokemon.name) {
+      <li>
+        <app-pokemon
+        [pokemon]="pokemon"
+        (selectedPokemon) = "onSelectedPokemon($event)"
+        />
+      </li>
+    }
+  </ul>
+
+  @if (isPokemonProvided) {
+    <app-pokemon-details
+    [pokemonDetails]="pokemonDetail"/>
+  } @else {
+    <p id="fallback">Select Pokemon to see details</p>
+  }
+</main>
